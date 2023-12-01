@@ -7,10 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pages:build": "pnpm next-on-pages",
+    "pages:build": "next-on-pages",
     "pages:deploy": "pnpm pages:build && wrangler pages deploy .vercel/output/static",
-    "pages:watch": "pnpm next-on-pages --watch",
-    "pages:dev": "pnpm wrangler pages dev .vercel/output/static --compatibility-date=2023-11-21 --compatibility-flag=nodejs_compat"
+    "pages:watch": "next-on-pages --watch",
+    "pages:dev": "wrangler pages dev .vercel/output/static --compatibility-date=2023-11-21 --compatibility-flag=nodejs_compat"
   },
   "dependencies": {
     "next": "14.0.3",
