@@ -7,9 +7,8 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "format": "pnpm prettier . --write",
+        "format": "prettier . --write",
         "pages:build": "next-on-pages",
-        "pages:deploy": "pnpm pages:build && wrangler pages deploy .vercel/output/static",
         "pages:watch": "next-on-pages --watch",
         "pages:dev": "wrangler pages dev .vercel/output/static --compatibility-date=2023-12-02 --compatibility-flag=nodejs_compat"
     },
@@ -20,7 +19,11 @@
         "nookies": "^2.5.2",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "react-icons": "^4.12.0"
+        "react-icons": "^4.12.0",
+        "react-tsparticles": "^2.12.2",
+        "tsparticles-engine": "^2.12.0",
+        "tsparticles-slim": "^2.12.0",
+        "typewriter-effect": "^2.21.0"
     },
     "devDependencies": {
         "@cloudflare/next-on-pages": "^1.8.0",

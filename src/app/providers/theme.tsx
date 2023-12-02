@@ -21,11 +21,19 @@ export interface ThemeContextData {
 }
 
 function DarkTheme({ children }: PropsWithChildren<{}>) {
-    return <div className='dark bg-background text-foreground'>{children}</div>
+    return (
+        <main className='dark bg-[#09060c] text-foreground min-h-screen'>
+            {children}
+        </main>
+    )
 }
 
 function LightTheme({ children }: PropsWithChildren<{}>) {
-    return <div className='light bg-background text-foreground'>{children}</div>
+    return (
+        <main className='light bg-background text-foreground min-h-screen'>
+            {children}
+        </main>
+    )
 }
 
 // @ts-expect-error
@@ -62,10 +70,10 @@ export function ThemeProvider({
 
     return (
         <ThemeContext.Provider value={{ theme: theme, setTheme: setTheme }}>
-            {theme && theme === GlobalTheme.Dark ? (
-                <DarkTheme>{children}</DarkTheme>
-            ) : (
+            {theme && theme === GlobalTheme.Light ? (
                 <LightTheme>{children}</LightTheme>
+            ) : (
+                <DarkTheme>{children}</DarkTheme>
             )}
         </ThemeContext.Provider>
     )

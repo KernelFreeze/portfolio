@@ -1,25 +1,15 @@
 import Navbar from '@/app/components/navbar'
-import { ThemeProvider } from '@/app/providers/theme'
+import { ThemeRoot } from '@/app/components/theme'
+import { StarParticles } from '../components/particles'
 
 export const runtime = 'edge'
 
 export default function Page() {
     return (
-        <ThemeProvider>
-            <main>
-                <Navbar pageId='minecraft' />
+        <ThemeRoot>
+            <Navbar pageId='minecraft' />
 
-                <div className='flex min-h-screen flex-col items-center justify-between p-24'>
-                    <div className='z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex'>
-                        <p>
-                            Get started by editing&nbsp;
-                            <code className='font-mono font-bold'>
-                                src/app/page.tsx
-                            </code>
-                        </p>
-                    </div>
-                </div>
-            </main>
-        </ThemeProvider>
+            <StarParticles />
+        </ThemeRoot>
     )
 }

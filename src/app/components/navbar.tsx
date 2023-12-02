@@ -16,6 +16,7 @@ import { Logo } from './logo'
 import { ThemeSwitcher } from './theme-switcher'
 import Link from './link'
 import { GlobalTheme, ThemeContext } from '../providers/theme'
+import { IoMdContact } from 'react-icons/io'
 
 const comfortaa = Comfortaa({ weight: 'variable', subsets: ['latin'] })
 
@@ -57,9 +58,12 @@ export default function Navbar({ pageId }: NavbarProps) {
 
     return (
         <NextNavbar
+            shouldHideOnScroll
+            isBlurred={false}
             className={comfortaa.className}
             onMenuOpenChange={setIsMenuOpen}
             classNames={{
+                base: 'bg-transparent',
                 item: [
                     'flex',
                     'relative',
@@ -105,7 +109,6 @@ export default function Navbar({ pageId }: NavbarProps) {
                                 className='w-full'
                                 aria-current={isActive}
                                 href={item.link}
-                                size='lg'
                             >
                                 {item.displayName}
                             </Link>
@@ -121,6 +124,7 @@ export default function Navbar({ pageId }: NavbarProps) {
                         className='hidden sm:flex text-secondary'
                         href='/contact'
                         variant='flat'
+                        startContent={<IoMdContact size={24} />}
                     >
                         Contact
                     </Button>
