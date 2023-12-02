@@ -10,6 +10,7 @@ import {
     NavbarMenuToggle,
     NavbarMenu,
     NavbarMenuItem,
+    cn,
 } from '@nextui-org/react'
 import { Comfortaa } from 'next/font/google'
 import { Logo } from './logo'
@@ -17,8 +18,27 @@ import { ThemeSwitcher } from './theme-switcher'
 import Link from './link'
 import { GlobalTheme, ThemeContext } from '../providers/theme'
 import { IoMdContact } from 'react-icons/io'
+import { useEffect, useState } from 'react'
 
 const comfortaa = Comfortaa({ weight: 'variable', subsets: ['latin'] })
+
+export const useScrollPosition = () => {
+    const [scrollPosition, setScrollPosition] = useState(0)
+
+    useEffect(() => {
+        const updatePosition = () => {
+            setScrollPosition(window.pageYOffset)
+        }
+
+        window.addEventListener('scroll', updatePosition)
+
+        updatePosition()
+
+        return () => window.removeEventListener('scroll', updatePosition)
+    }, [])
+
+    return scrollPosition
+}
 
 interface MenuItem {
     id: string
@@ -34,6 +54,7 @@ interface NavbarProps {
 export default function Navbar({ pageId }: NavbarProps) {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false)
     const { theme } = useContext(ThemeContext)
+    const scrollPosition = useScrollPosition()
 
     const menuItems: MenuItem[] = [
         {
@@ -63,7 +84,7 @@ export default function Navbar({ pageId }: NavbarProps) {
             className={comfortaa.className}
             onMenuOpenChange={setIsMenuOpen}
             classNames={{
-                base: 'bg-transparent',
+                base: cn(scrollPosition > 0 ? 'shadow' : 'bg-transparent'),
                 item: [
                     'flex',
                     'relative',
