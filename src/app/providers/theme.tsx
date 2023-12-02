@@ -1,6 +1,6 @@
 'use client'
 
-import { parseCookies, setCookie } from 'nookies'
+import { setCookie } from 'nookies'
 import {
     Dispatch,
     PropsWithChildren,
