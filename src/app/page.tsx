@@ -127,10 +127,10 @@ export default function Page() {
                                     </div>
                                     <div className='relative flex w-full p-3 flex-auto flex-col place-content-inherit align-items-inherit h-auto break-words text-left overflow-y-auto subpixel-antialiased'>
                                         <p className='font-normal text-base text-default-500'>
-                                            I code mostly in Rust, Java,
+                                            I mostly code in Rust, Java,
                                             Typescript and Python, but I also
                                             know C, C++, Go, Ruby, C#, Lua, PHP,
-                                            among others.
+                                            Kotlin among others.
                                         </p>
                                     </div>
                                 </div>
