@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 const DynamicStarParticles = dynamic(
     () => import('@/app/components/particles'),
     {
-        loading: () => <></>,
+        ssr: false,
     }
 )
 

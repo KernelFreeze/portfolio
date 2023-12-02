@@ -7,7 +7,7 @@ import { PiBroom } from 'react-icons/pi'
 import dynamic from 'next/dynamic'
 
 const DynamicStarParticles = dynamic(() => import('./components/particles'), {
-    loading: () => <></>,
+    ssr: false,
 })
 
 export default function Page() {
