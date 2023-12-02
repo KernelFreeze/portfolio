@@ -20,23 +20,27 @@ const config: Config = {
     darkMode: 'class',
     plugins: [
         nextui({
-            defaultTheme: 'dark',
-            defaultExtendTheme: 'dark',
             layout: {},
             themes: {
                 light: {
                     layout: {},
                     colors: {
-                        primary: '#FFFFFF',
-                        secondary: '#FFFFFF',
-                        success: '#FFFFFF',
-                        warning: '#FFFFFF',
-                        danger: '#FFFFFF'
+                        primary: '#D826F0',
+                        secondary: '#1DA5DB',
+                        success: '#2CF792',
+                        warning: '#F1E67F',
+                        danger: '#F04F6A'
                     },
                 },
                 dark: {
                     layout: {},
-                    colors: {},
+                    colors: {
+                        primary: '#D826F0',
+                        secondary: '#39C1F7',
+                        success: '#2CF792',
+                        warning: '#F1E67F',
+                        danger: '#F04F6A'
+                    },
                 },
             },
         }),

@@ -9,6 +9,7 @@ import {
 } from '@nextui-org/react'
 import { Comfortaa } from 'next/font/google'
 import { Logo } from './logo'
+import { ThemeSwitcher } from './theme-switcher'
 
 const comfortaa = Comfortaa({ weight: 'variable', subsets: ['latin'] })
 
@@ -18,7 +19,9 @@ export default function Navbar() {
             <NavbarBrand>
                 <Link color='foreground' href='/'>
                     <Logo className='mr-2' />
-                    <p className='font-bold text-inherit'>CelesteLove Portfolio</p>
+                    <p className='font-bold text-inherit'>
+                        CelesteLove Portfolio
+                    </p>
                 </Link>
             </NavbarBrand>
             <NavbarContent className='hidden sm:flex gap-4' justify='center'>
@@ -40,9 +43,17 @@ export default function Navbar() {
             </NavbarContent>
             <NavbarContent justify='end'>
                 <NavbarItem>
-                    <Button as={Link} color='primary' href='/contact' variant='flat'>
+                    <Button
+                        as={Link}
+                        color='secondary'
+                        href='/contact'
+                        variant='flat'
+                    >
                         Contact
                     </Button>
+                </NavbarItem>
+                <NavbarItem>
+                    <ThemeSwitcher />
                 </NavbarItem>
             </NavbarContent>
         </NextNavbar>
