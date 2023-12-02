@@ -192,8 +192,9 @@ export default function Page() {
                     <Image
                         fill
                         src='/gradients/blue-purple-1.svg'
-                        alt=''
+                        alt='Background'
                         aria-hidden
+                        priority
                     />
                 </div>
             </section>
