@@ -6,7 +6,7 @@ import type { Engine } from 'tsparticles-engine'
 import { loadSlim } from 'tsparticles-slim'
 import { GlobalTheme, ThemeContext } from '../providers/theme'
 
-export function StarParticles() {
+export default function StarParticles() {
     const { theme } = useContext(ThemeContext)
     const particlesInit = useCallback(async (engine: Engine) => {
         await loadSlim(engine)

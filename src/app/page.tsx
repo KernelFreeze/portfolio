@@ -1,17 +1,21 @@
 import Navbar from '@/app/components/navbar'
 import { ThemeRoot } from '@/app/components/theme'
-import { StarParticles } from './components/particles'
 import { Card, CardBody } from '@nextui-org/react'
 import { TypeWriter } from './typewriter'
 import Image from 'next/image'
 import { PiBroom } from 'react-icons/pi'
+import dynamic from 'next/dynamic'
+
+const DynamicStarParticles = dynamic(() => import('./components/particles'), {
+    loading: () => <></>,
+})
 
 export default function Page() {
     return (
         <ThemeRoot>
             <Navbar pageId='home' />
 
-            <StarParticles />
+            <DynamicStarParticles />
 
             <section className='flex flex-col gap-2 mt-1 sm:mt-5 min-h-screen bg-[center_right_20%] bg-no-repeat z-[100]'>
                 <div className='flex flex-col items-center justify-center h-full w-full mt-10'>
