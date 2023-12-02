@@ -202,6 +202,26 @@ export default function Page() {
                     priority
                 />
             </div>
+
+            <div className='w-screen h-[70em] absolute top-[90em] -left-[15%]'>
+                <Image
+                    fill
+                    src='/gradients/blue-purple-3.svg'
+                    alt='Background'
+                    aria-hidden
+                    priority
+                />
+            </div>
+
+            <div className='w-screen h-[70em] absolute top-[250em] -right-[15%]'>
+                <Image
+                    fill
+                    src='/gradients/blue-purple-3.svg'
+                    alt='Background'
+                    aria-hidden
+                    priority
+                />
+            </div>
         </ThemeRoot>
     )
 }
