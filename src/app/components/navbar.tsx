@@ -44,6 +44,7 @@ interface MenuItem {
     id: string
     link: string
     prefetch?: boolean
+    isExternal?: boolean
     displayName: string
 }
 
@@ -70,10 +71,11 @@ export default function Navbar({ pageId }: NavbarProps) {
             displayName: 'Open Source',
         },
         {
-            id: 'games',
-            link: '/games',
-            prefetch: true,
-            displayName: 'Game Development',
+            id: 'github',
+            link: 'https://github.com/KernelFreeze',
+            prefetch: false,
+            displayName: 'GitHub',
+            isExternal: true,
         },
     ]
 
@@ -130,6 +132,8 @@ export default function Navbar({ pageId }: NavbarProps) {
                                 className='w-full'
                                 aria-current={isActive}
                                 href={item.link}
+                                showAnchorIcon={item.isExternal}
+                                isExternal={item.isExternal}
                             >
                                 {item.displayName}
                             </Link>
@@ -168,6 +172,8 @@ export default function Navbar({ pageId }: NavbarProps) {
                                 href={item.link}
                                 size='lg'
                                 aria-current={isActive}
+                                showAnchorIcon={item.isExternal}
+                                isExternal={item.isExternal}
                             >
                                 {item.displayName}
                             </Link>
