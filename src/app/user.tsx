@@ -14,7 +14,7 @@ export function CelesteUser() {
                     name='Celeste Peláez'
                     description={<TypeWriter />}
                     avatarProps={{
-                        src: '/avatar.jpg',
+                        src: '/avatar.webp',
                         size: 'lg',
                     }}
                     classNames={{

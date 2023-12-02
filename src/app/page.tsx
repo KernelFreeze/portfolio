@@ -3,8 +3,6 @@ import { ThemeRoot } from '@/app/components/theme'
 import { StarParticles } from './components/particles'
 import { CelesteUser } from './user'
 
-export const runtime = 'edge'
-
 export default function Page() {
     return (
         <ThemeRoot>
@@ -35,19 +33,21 @@ export default function Page() {
 
                         <div className='mt-5 md:mt-10 text-lg md:text-xl'>
                             <p>
-                                I&apos;m&nbsp;{' '}
+                                I&apos;m{' '}
                                 <span className='bg-gradient-to-b from-[#1791c9] to-[#6fe5ee] bg-clip-text text-transparent'>
                                     Celeste Pel&aacute;ez
-                                </span>{' '}
-                                from
+                                </span>
+                                , a passionate software artisan hailing from the
+                                vibrant landscapes of{' '}
                                 <span className='bg-gradient-to-b from-[#c568b1] to-[#d317aa] bg-clip-text text-transparent'>
                                     &nbsp;Colombia.&nbsp;
                                 </span>
-                                I love software development. I learned to
-                                program by myself when I was 11 years old, and
-                                since then I haven&apos;t stopped trying to
-                                improve my skills every day. I always try to do
-                                a flawless job on all the projects I work on.
+                                . My journey into the world of coding began at
+                                the tender age of 11, fueled by a desire to
+                                unravel the mysteries of technology. Since those
+                                early days, my love for software development has
+                                only intensified, propelling me into a realm of
+                                continuous learning and innovation.
                             </p>
                         </div>
 

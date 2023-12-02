@@ -6,7 +6,7 @@ export function TypeWriter() {
         <Typewriter
             options={{
                 strings: [
-                    'Software Developer',
+                    'Fullstack Software Developer',
                     'Minecraft Modder',
                     'Game Developer',
                     'Freelancer',
