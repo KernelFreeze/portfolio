@@ -4,7 +4,7 @@ import { Card, CardBody } from '@nextui-org/react'
 import Image from 'next/image'
 import { PiBroom } from 'react-icons/pi'
 import dynamic from 'next/dynamic'
-import loveImg from '../../public/love.png'
+import loveImg from '~/love.png'
 
 const DynamicStarParticles = dynamic(() => import('./components/particles'), {
     ssr: false,
