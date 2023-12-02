@@ -4,6 +4,7 @@ import { Card, CardBody } from '@nextui-org/react'
 import Image from 'next/image'
 import { PiBroom } from 'react-icons/pi'
 import dynamic from 'next/dynamic'
+import loveImg from '../../public/love.png'
 
 const DynamicStarParticles = dynamic(() => import('./components/particles'), {
     ssr: false,
@@ -69,120 +70,136 @@ export default function Page() {
                             </CardBody>
                         </Card>
 
-                        <h1 className='mt-10 md:mt-20 tracking-tight inline font-semibold from-[#5EA2EF] to-[#0072F5] text-[2.1rem] lg:text-[3.1rem] bg-clip-text text-transparent bg-gradient-to-b'>
-                            About me
-                        </h1>
-
-                        <div className='mt-5 md:mt-10 text-lg md:text-xl'>
-                            <p>
-                                I&apos;m{' '}
-                                <span className='bg-gradient-to-b from-[#1791c9] to-[#6fe5ee] bg-clip-text text-transparent'>
-                                    Celeste Pel&aacute;ez
-                                </span>
-                                , a passionate software artisan hailing from the
-                                vibrant landscapes of{' '}
-                                <span className='bg-gradient-to-b from-[#c568b1] to-[#d317aa] bg-clip-text text-transparent'>
-                                    &nbsp;Colombia.&nbsp;
-                                </span>
-                                . My journey into the world of coding began at
-                                the tender age of 11, fueled by a desire to
-                                unravel the mysteries of technology. Since those
-                                early days, my love for software development has
-                                only intensified, propelling me into a realm of
-                                continuous learning and innovation.
-                            </p>
+                        <div className='mt-10 md:mt-20 text-lg md:text-xl flex relative overflow-hidden lg:overflow-visible w-full flex-nowrap justify-between items-center'>
+                            <div>
+                                <h1 className='inline md:block tracking-tight font-extrabold text-3xl lg:text-6xl '>
+                                    A little{' '}
+                                    <p className='inline-block md:block from-[#5EA2EF] to-[#0072F5] bg-clip-text text-transparent bg-gradient-to-b'>
+                                        about me.
+                                    </p>
+                                </h1>
+                                <p className='mt-5 md:mt-10'>
+                                    I&apos;m{' '}
+                                    <span className='bg-gradient-to-b from-[#1791c9] to-[#6fe5ee] bg-clip-text text-transparent'>
+                                        Celeste Pel&aacute;ez
+                                    </span>
+                                    , a passionate software artisan hailing from
+                                    the vibrant landscapes of{' '}
+                                    <span className='bg-gradient-to-b from-[#c568b1] to-[#d317aa] bg-clip-text text-transparent'>
+                                        &nbsp;Colombia.&nbsp;
+                                    </span>
+                                    My journey into the world of coding began at
+                                    the tender age of 11, fueled by a desire to
+                                    unravel the mysteries of technology. Since
+                                    those early days, my love for software
+                                    development has only intensified, propelling
+                                    me into a realm of continuous learning and
+                                    innovation.
+                                </p>
+                            </div>
+                            <div className='hidden xl:flex mt-32'>
+                                <Image
+                                    src={loveImg}
+                                    alt='CelesteLove logo'
+                                    sizes='64px, 72px, 100px, 200px, 250px, 300px, 400px, 500px, 800px, 1000px'
+                                />
+                            </div>
                         </div>
-
-                        <h1 className='mt-10 md:mt-20 tracking-tight inline font-semibold from-[#6FEE8D] to-[#17c964] text-[2.1rem] lg:text-[3.1rem] bg-clip-text text-transparent bg-gradient-to-b'>
-                            Professional Skills
-                        </h1>
-
-                        <div className='mt-5 md:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8'>
-                            <div
-                                className='flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]'
-                                tabIndex={-1}
-                            >
-                                <div className='flex p-3 z-10 w-full justify-start items-center shrink-0 overflow-inherit color-inherit subpixel-antialiased rounded-t-large gap-2 pb-0'>
-                                    <div className='flex justify-center p-2 rounded-full items-center bg-secondary-100/80 text-pink-500'>
-                                        <MagicWandIcon />
+                        <div className='mt-10 md:mt-20'>
+                            <h1 className='inline md:block tracking-tight font-extrabold text-3xl lg:text-6xl '>
+                                Professional{' '}
+                                <p className='inline-block md:block from-[#6FEE8D] to-[#17c964] bg-clip-text text-transparent bg-gradient-to-b'>
+                                    Skills.
+                                </p>
+                            </h1>
+                            <div className='mt-5 md:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8'>
+                                <div
+                                    className='flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]'
+                                    tabIndex={-1}
+                                >
+                                    <div className='flex p-3 z-10 w-full justify-start items-center shrink-0 overflow-inherit color-inherit subpixel-antialiased rounded-t-large gap-2 pb-0'>
+                                        <div className='flex justify-center p-2 rounded-full items-center bg-secondary-100/80 text-pink-500'>
+                                            <MagicWandIcon />
+                                        </div>
+                                        <p className='text-base font-semibold'>
+                                            Programming Languages
+                                        </p>
                                     </div>
-                                    <p className='text-base font-semibold'>
-                                        Programming Languages
-                                    </p>
-                                </div>
-                                <div className='relative flex w-full p-3 flex-auto flex-col place-content-inherit align-items-inherit h-auto break-words text-left overflow-y-auto subpixel-antialiased'>
-                                    <p className='font-normal text-base text-default-500'>
-                                        I code mostly in Rust, Java, Typescript
-                                        and Python, but I also know C, C++, Go,
-                                        Ruby, C#, Lua, PHP, among others.
-                                    </p>
-                                </div>
-                            </div>
-                            <div
-                                className='flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]'
-                                tabIndex={-1}
-                            >
-                                <div className='flex p-3 z-10 w-full justify-start items-center shrink-0 overflow-inherit color-inherit subpixel-antialiased rounded-t-large gap-2 pb-0'>
-                                    <div className='flex justify-center p-2 rounded-full items-center bg-secondary-100/80 text-pink-500'>
-                                        <LightingBoltIcon />
+                                    <div className='relative flex w-full p-3 flex-auto flex-col place-content-inherit align-items-inherit h-auto break-words text-left overflow-y-auto subpixel-antialiased'>
+                                        <p className='font-normal text-base text-default-500'>
+                                            I code mostly in Rust, Java,
+                                            Typescript and Python, but I also
+                                            know C, C++, Go, Ruby, C#, Lua, PHP,
+                                            among others.
+                                        </p>
                                     </div>
-                                    <p className='text-base font-semibold'>
-                                        Team Player
-                                    </p>
                                 </div>
-                                <div className='relative flex w-full p-3 flex-auto flex-col place-content-inherit align-items-inherit h-auto break-words text-left overflow-y-auto subpixel-antialiased'>
-                                    <p className='font-normal text-base text-default-500'>
-                                        I can easily integrate myself into a
-                                        development team and learn quickly about
-                                        a pre-existing code base.
-                                    </p>
-                                </div>
-                            </div>
-                            <div
-                                className='flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]'
-                                tabIndex={-1}
-                            >
-                                <div className='flex p-3 z-10 w-full justify-start items-center shrink-0 overflow-inherit color-inherit subpixel-antialiased rounded-t-large gap-2 pb-0'>
-                                    <div className='flex justify-center p-2 rounded-full items-center bg-secondary-100/80 text-pink-500'>
-                                        <PiBroom size={24} />
+                                <div
+                                    className='flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]'
+                                    tabIndex={-1}
+                                >
+                                    <div className='flex p-3 z-10 w-full justify-start items-center shrink-0 overflow-inherit color-inherit subpixel-antialiased rounded-t-large gap-2 pb-0'>
+                                        <div className='flex justify-center p-2 rounded-full items-center bg-secondary-100/80 text-pink-500'>
+                                            <LightingBoltIcon />
+                                        </div>
+                                        <p className='text-base font-semibold'>
+                                            Team Player
+                                        </p>
                                     </div>
-                                    <p className='text-base font-semibold'>
-                                        Clean Code
-                                    </p>
-                                </div>
-                                <div className='relative flex w-full p-3 flex-auto flex-col place-content-inherit align-items-inherit h-auto break-words text-left overflow-y-auto subpixel-antialiased'>
-                                    <p className='font-normal text-base text-default-500'>
-                                        I love writing clean and readable source
-                                        code, always trying to apply available
-                                        design patterns. I also use the most
-                                        efficient data structures to every
-                                        problem to maintain the required
-                                        performance profiles to every
-                                        application.
-                                    </p>
-                                </div>
-                            </div>
-                            <div
-                                className='flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]'
-                                tabIndex={-1}
-                            >
-                                <div className='flex p-3 z-10 w-full justify-start items-center shrink-0 overflow-inherit color-inherit subpixel-antialiased rounded-t-large gap-2 pb-0'>
-                                    <div className='flex justify-center p-2 rounded-full items-center bg-secondary-100/80 text-pink-500'>
-                                        <ComputerIcon />
+                                    <div className='relative flex w-full p-3 flex-auto flex-col place-content-inherit align-items-inherit h-auto break-words text-left overflow-y-auto subpixel-antialiased'>
+                                        <p className='font-normal text-base text-default-500'>
+                                            I can easily integrate myself into a
+                                            development team and learn quickly
+                                            about a pre-existing code base.
+                                        </p>
                                     </div>
-                                    <p className='text-base font-semibold'>
-                                        Code testing
-                                    </p>
                                 </div>
-                                <div className='relative flex w-full p-3 flex-auto flex-col place-content-inherit align-items-inherit h-auto break-words text-left overflow-y-auto subpixel-antialiased'>
-                                    <p className='font-normal text-base text-default-500'>
-                                        I write unit tests for every component
-                                        coded by me to check that it&apos;s
-                                        semantically correct. I also thoroughly
-                                        test the application to make sure it
-                                        works correctly before submitting my
-                                        changes.
-                                    </p>
+                                <div
+                                    className='flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]'
+                                    tabIndex={-1}
+                                >
+                                    <div className='flex p-3 z-10 w-full justify-start items-center shrink-0 overflow-inherit color-inherit subpixel-antialiased rounded-t-large gap-2 pb-0'>
+                                        <div className='flex justify-center p-2 rounded-full items-center bg-secondary-100/80 text-pink-500'>
+                                            <PiBroom size={24} />
+                                        </div>
+                                        <p className='text-base font-semibold'>
+                                            Clean Code
+                                        </p>
+                                    </div>
+                                    <div className='relative flex w-full p-3 flex-auto flex-col place-content-inherit align-items-inherit h-auto break-words text-left overflow-y-auto subpixel-antialiased'>
+                                        <p className='font-normal text-base text-default-500'>
+                                            I love writing clean and readable
+                                            source code, always trying to apply
+                                            available design patterns. I also
+                                            use the most efficient data
+                                            structures to every problem to
+                                            maintain the required performance
+                                            profiles to every application.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    className='flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]'
+                                    tabIndex={-1}
+                                >
+                                    <div className='flex p-3 z-10 w-full justify-start items-center shrink-0 overflow-inherit color-inherit subpixel-antialiased rounded-t-large gap-2 pb-0'>
+                                        <div className='flex justify-center p-2 rounded-full items-center bg-secondary-100/80 text-pink-500'>
+                                            <ComputerIcon />
+                                        </div>
+                                        <p className='text-base font-semibold'>
+                                            Code testing
+                                        </p>
+                                    </div>
+                                    <div className='relative flex w-full p-3 flex-auto flex-col place-content-inherit align-items-inherit h-auto break-words text-left overflow-y-auto subpixel-antialiased'>
+                                        <p className='font-normal text-base text-default-500'>
+                                            I write unit tests for every
+                                            component coded by me to check that
+                                            it&apos;s semantically correct. I
+                                            also thoroughly test the application
+                                            to make sure it works correctly
+                                            before submitting my changes.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -201,6 +218,7 @@ export default function Page() {
         </ThemeRoot>
     )
 }
+
 function ComputerIcon() {
     return (
         <svg

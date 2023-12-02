@@ -17,15 +17,24 @@ export function ThemeSwitcher() {
                 <div
                     onClick={switchToLight}
                     className='cursor-pointer text-white'
+                    role='button'
+                    aria-label='Toggle Light Mode'
+                    tabIndex={0}
                 >
-                    <MdLightMode size={20} />
+                    <MdLightMode aria-hidden size={20} />
                 </div>
             )
         }
         default: {
             return (
-                <div onClick={switchToDark} className='cursor-pointer'>
-                    <IoMoonOutline size={20} />
+                <div
+                    onClick={switchToDark}
+                    className='cursor-pointer'
+                    role='button'
+                    aria-label='Toggle Dark Mode'
+                    tabIndex={0}
+                >
+                    <IoMoonOutline aria-hidden size={20} />
                 </div>
             )
         }
