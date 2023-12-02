@@ -1,9 +1,11 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "plugin:eslint-plugin-next-on-pages/recommended"
-  ],
-  "plugins": [
-    "eslint-plugin-next-on-pages"
-  ]
+    "extends": [
+        "next/core-web-vitals",
+        "plugin:eslint-plugin-next-on-pages/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "rules": {
+        "prettier/prettier": "error"
+    },
+    "plugins": ["eslint-plugin-next-on-pages", "prettier"]
 }
