@@ -1,7 +1,7 @@
 'use client'
 import Typewriter from 'typewriter-effect'
 
-export function TypeWriter() {
+export default function DevTypewriter() {
     return (
         <Typewriter
             options={{

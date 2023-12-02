@@ -1,12 +1,15 @@
 import Navbar from '@/app/components/navbar'
 import { ThemeRoot } from '@/app/components/theme'
 import { Card, CardBody } from '@nextui-org/react'
-import { TypeWriter } from './typewriter'
 import Image from 'next/image'
 import { PiBroom } from 'react-icons/pi'
 import dynamic from 'next/dynamic'
 
 const DynamicStarParticles = dynamic(() => import('./components/particles'), {
+    ssr: false,
+})
+
+const DynamicTypewriter = dynamic(() => import('./typewriter'), {
     ssr: false,
 })
 
@@ -59,7 +62,7 @@ export default function Page() {
                                             Celeste Peláez
                                         </span>
                                         <span className='text-tiny text-foreground-400 md:text-lg min-w-[10rem] md:min-w-[15rem]'>
-                                            <TypeWriter />
+                                            <DynamicTypewriter />
                                         </span>
                                     </div>
                                 </div>

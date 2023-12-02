@@ -12,7 +12,7 @@ const DynamicStarParticles = dynamic(
 export default function Page() {
     return (
         <ThemeRoot>
-            <Navbar pageId='minecraft' />
+            <Navbar pageId='open_source' />
 
             <DynamicStarParticles />
         </ThemeRoot>
