@@ -101,7 +101,7 @@ export default function Page() {
                                 <Image
                                     src={loveImg}
                                     alt='CelesteLove logo'
-                                    sizes='64px, 72px, 100px, 200px, 250px, 300px, 400px, 500px, 800px, 1000px'
+                                    sizes='16w, 32w, 48w, 64w, 96w, 128w, 256w, 384w, 640w, 750w, 828w, 1080w, 1200w, 1920w, 2048w, 3840w'
                                 />
                             </div>
                         </div>
