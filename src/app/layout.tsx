@@ -5,6 +5,7 @@ import { Ubuntu } from 'next/font/google'
 import { NextUIProvider } from './providers/next-ui'
 import { PropsWithChildren } from 'react'
 import { cn } from '@nextui-org/react'
+import { Analytics } from '@vercel/analytics/react'
 
 const ubuntu = Ubuntu({ weight: '400', subsets: ['latin'] })
 
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: PropsWithChildren<{}>) {
         <html lang='en'>
             <body className={ubuntu.className}>
                 <NextUIProvider>{children}</NextUIProvider>
+                <Analytics />
             </body>
         </html>
     )

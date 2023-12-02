@@ -83,7 +83,7 @@ export default function Navbar({ pageId }: NavbarProps) {
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-                    className='sm:hidden'
+                    className='lg:hidden'
                 />
                 <NavbarBrand>
                     <Link
@@ -98,7 +98,7 @@ export default function Navbar({ pageId }: NavbarProps) {
                     </Link>
                 </NavbarBrand>
             </NavbarContent>
-            <NavbarContent className='hidden sm:flex gap-4' justify='center'>
+            <NavbarContent className='hidden lg:flex gap-4' justify='center'>
                 {menuItems.map(item => {
                     const isActive = item.id === pageId
                     return (

@@ -13,7 +13,7 @@ export default function Page() {
 
             <StarParticles />
 
-            <section className='flex flex-col gap-2 mt-1 sm:mt-5 dark:bg-[url(/gradients/blue-purple-1.svg)] min-h-screen bg-[center_right_20%] bg-no-repeat'>
+            <section className='flex flex-col gap-2 mt-1 sm:mt-5 min-h-screen bg-[center_right_20%] bg-no-repeat z-[100]'>
                 <div className='flex flex-col items-center justify-center h-full w-full mt-10'>
                     <h1 className='tracking-tight inline font-semibold text-[2.1rem] lg:text-5xl'>
                         Hi there!
@@ -90,7 +90,7 @@ export default function Page() {
                             Professional Skills
                         </h1>
 
-                        <div className='mt-5 md:mt-10 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8'>
+                        <div className='mt-5 md:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8'>
                             <div
                                 className='flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]'
                                 tabIndex={-1}
@@ -180,6 +180,14 @@ export default function Page() {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className='w-screen h-[70em] absolute -top-[20%] sm:-top-[10%] -left-[15%]'>
+                    <Image
+                        fill
+                        src='/gradients/blue-purple-1.svg'
+                        alt=''
+                        aria-hidden
+                    />
                 </div>
             </section>
         </ThemeRoot>
