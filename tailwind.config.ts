@@ -29,7 +29,7 @@ const config: Config = {
                         secondary: '#1DA5DB',
                         success: '#2CF792',
                         warning: '#F1E67F',
-                        danger: '#F04F6A'
+                        danger: '#F04F6A',
                     },
                 },
                 dark: {
@@ -39,7 +39,7 @@ const config: Config = {
                         secondary: '#39C1F7',
                         success: '#2CF792',
                         warning: '#F1E67F',
-                        danger: '#F04F6A'
+                        danger: '#F04F6A',
                     },
                 },
             },

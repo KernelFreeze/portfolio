@@ -21,14 +21,14 @@ export interface ThemeContextData {
 }
 
 function DarkTheme({ children }: PropsWithChildren<{}>) {
-    return <div className='dark bg-background'>{children}</div>
+    return <div className='dark bg-background text-foreground'>{children}</div>
 }
 
 function LightTheme({ children }: PropsWithChildren<{}>) {
-    return <div className='light bg-background'>{children}</div>
+    return <div className='light bg-background text-foreground'>{children}</div>
 }
 
-// @ts-ignore
+// @ts-expect-error
 export const ThemeContext = createContext<ThemeContextData>(null)
 
 interface ThemeProviderProps {
@@ -48,7 +48,7 @@ export function ThemeProvider({
                 path: '/',
             })
         }
-    }, [])
+    }, [theme])
 
     useEffect(() => {
         if (!theme) {

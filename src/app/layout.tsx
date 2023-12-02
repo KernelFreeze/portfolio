@@ -6,6 +6,8 @@ import { cookies } from 'next/headers'
 import { PropsWithChildren } from 'react'
 import { GlobalTheme, ThemeProvider } from './providers/theme'
 
+export const runtime = 'edge'
+
 const ubuntu = Ubuntu({ weight: '400', subsets: ['latin'] })
 
 export const metadata: Metadata = {
