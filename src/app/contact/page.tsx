@@ -1,5 +1,4 @@
 import Navbar from '@/app/components/navbar'
-import { ThemeRoot } from '@/app/components/theme'
 import { Card, CardBody } from '@nextui-org/react'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
@@ -13,7 +12,7 @@ const DynamicStarParticles = dynamic(
 
 export default function Page() {
     return (
-        <ThemeRoot>
+        <main>
             <Navbar pageId='contact' />
 
             <DynamicStarParticles />
@@ -26,7 +25,7 @@ export default function Page() {
 
                     <Card
                         isBlurred
-                        className='mt-10 lg:mt-16 border-none bg-background/60 dark:bg-default-100/50'
+                        className='mt-10 lg:mt-16 border-none bg-default-100/50'
                         shadow='sm'
                     >
                         <CardBody className='justify-center'>
@@ -69,6 +68,6 @@ export default function Page() {
                     priority
                 />
             </div>
-        </ThemeRoot>
+        </main>
     )
 }

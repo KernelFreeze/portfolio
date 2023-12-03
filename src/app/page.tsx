@@ -1,10 +1,10 @@
 import Navbar from '@/app/components/navbar'
-import { ThemeRoot } from '@/app/components/theme'
 import { Card, CardBody } from '@nextui-org/react'
 import Image from 'next/image'
 import { PiBroom } from 'react-icons/pi'
 import dynamic from 'next/dynamic'
 import loveImg from '~/love.png'
+import avatarImg from '~/avatar.webp'
 
 const DynamicStarParticles = dynamic(() => import('./components/particles'), {
     ssr: false,
@@ -16,7 +16,7 @@ const DynamicTypewriter = dynamic(() => import('./typewriter'), {
 
 export default function Page() {
     return (
-        <ThemeRoot>
+        <main>
             <Navbar pageId='home' />
 
             <DynamicStarParticles />
@@ -38,7 +38,7 @@ export default function Page() {
                     <div className='flex flex-col mt-1 md:mt-5 items-center p-8 md:w-6/12'>
                         <Card
                             isBlurred
-                            className='border-none bg-background/60 dark:bg-default-100/50'
+                            className='border-none bg-default-100/50'
                             shadow='sm'
                         >
                             <CardBody className='justify-center'>
@@ -51,11 +51,10 @@ export default function Page() {
                                         className='flex relative justify-center items-center box-border overflow-hidden align-middle z-0 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 w-14 h-14 text-small bg-default text-default-foreground rounded-full'
                                     >
                                         <Image
-                                            src='/avatar.webp'
+                                            src={avatarImg}
                                             className='object-cover'
                                             alt='Celeste Peláez'
                                             aria-hidden
-                                            fill={true}
                                         />
                                     </span>
                                     <div className='inline-flex flex-col items-start md:ml-2'>
@@ -114,7 +113,7 @@ export default function Page() {
                             </h1>
                             <div className='mt-5 md:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8'>
                                 <div
-                                    className='flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]'
+                                    className='flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]'
                                     tabIndex={-1}
                                 >
                                     <div className='flex p-3 z-10 w-full justify-start items-center shrink-0 overflow-inherit color-inherit subpixel-antialiased rounded-t-large gap-2 pb-0'>
@@ -135,7 +134,7 @@ export default function Page() {
                                     </div>
                                 </div>
                                 <div
-                                    className='flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]'
+                                    className='flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]'
                                     tabIndex={-1}
                                 >
                                     <div className='flex p-3 z-10 w-full justify-start items-center shrink-0 overflow-inherit color-inherit subpixel-antialiased rounded-t-large gap-2 pb-0'>
@@ -155,7 +154,7 @@ export default function Page() {
                                     </div>
                                 </div>
                                 <div
-                                    className='flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]'
+                                    className='flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]'
                                     tabIndex={-1}
                                 >
                                     <div className='flex p-3 z-10 w-full justify-start items-center shrink-0 overflow-inherit color-inherit subpixel-antialiased rounded-t-large gap-2 pb-0'>
@@ -179,7 +178,7 @@ export default function Page() {
                                     </div>
                                 </div>
                                 <div
-                                    className='flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]'
+                                    className='flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]'
                                     tabIndex={-1}
                                 >
                                     <div className='flex p-3 z-10 w-full justify-start items-center shrink-0 overflow-inherit color-inherit subpixel-antialiased rounded-t-large gap-2 pb-0'>
@@ -215,7 +214,7 @@ export default function Page() {
                     />
                 </div>
             </section>
-        </ThemeRoot>
+        </main>
     )
 }
 

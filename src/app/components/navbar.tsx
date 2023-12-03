@@ -14,9 +14,7 @@ import {
 } from '@nextui-org/react'
 import { Comfortaa } from 'next/font/google'
 import { Logo } from './logo'
-import { ThemeSwitcher } from './theme-switcher'
 import Link from './link'
-import { GlobalTheme, ThemeContext } from '../providers/theme'
 import { IoMdContact } from 'react-icons/io'
 import { useEffect, useState } from 'react'
 
@@ -54,7 +52,6 @@ interface NavbarProps {
 
 export default function Navbar({ pageId }: NavbarProps) {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false)
-    const { theme } = useContext(ThemeContext)
     const scrollPosition = useScrollPosition()
 
     const menuItems: MenuItem[] = [
@@ -114,7 +111,7 @@ export default function Navbar({ pageId }: NavbarProps) {
                         className='text-foreground inline-block'
                         href='/'
                     >
-                        <Logo className='mr-2 inline' />
+                        <Logo aria-hidden className='mr-2 inline' />
                         <p className='font-bold text-inherit inline'>
                             CelesteLove Portfolio
                         </p>
@@ -154,13 +151,8 @@ export default function Navbar({ pageId }: NavbarProps) {
                         Contact
                     </Button>
                 </NavbarItem>
-                <NavbarItem>
-                    <ThemeSwitcher />
-                </NavbarItem>
             </NavbarContent>
-            <NavbarMenu
-                className={theme === GlobalTheme.Dark ? 'dark' : 'light'}
-            >
+            <NavbarMenu>
                 {menuItems.map(item => {
                     const isActive = item.id === pageId
                     return (

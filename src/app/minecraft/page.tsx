@@ -1,5 +1,4 @@
 import Navbar from '@/app/components/navbar'
-import { ThemeRoot } from '@/app/components/theme'
 import { Card, CardBody, CardHeader, Divider } from '@nextui-org/react'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
@@ -29,7 +28,7 @@ const DynamicStarParticles = dynamic(
 
 export default function Page() {
     return (
-        <ThemeRoot>
+        <main>
             <Navbar pageId='minecraft' />
             <DynamicStarParticles />
 
@@ -222,7 +221,7 @@ export default function Page() {
                     priority
                 />
             </div>
-        </ThemeRoot>
+        </main>
     )
 }
 

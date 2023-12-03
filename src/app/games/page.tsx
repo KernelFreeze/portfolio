@@ -1,5 +1,4 @@
 import Navbar from '@/app/components/navbar'
-import { ThemeRoot } from '@/app/components/theme'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 
@@ -12,7 +11,7 @@ const DynamicStarParticles = dynamic(
 
 export default function Page() {
     return (
-        <ThemeRoot>
+        <main>
             <Navbar pageId='games' />
             <DynamicStarParticles />
 
@@ -35,6 +34,6 @@ export default function Page() {
                     />
                 </div>
             </section>
-        </ThemeRoot>
+        </main>
     )
 }
