@@ -245,7 +245,12 @@ function ProjectCard({
             </CardHeader>
             <Divider />
             <CardBody className='overflow-visible py-8 w-full grid grid-cols-1 2xl:grid-cols-2 gap-10'>
-                <Image className='rounded-xl' alt='Card background' src={img} />
+                <Image
+                    className='rounded-xl'
+                    alt='Card background'
+                    src={img}
+                    placeholder='blur'
+                />
                 <div>{children}</div>
             </CardBody>
         </Card>
