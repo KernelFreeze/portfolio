@@ -195,7 +195,7 @@ export default function Page() {
                     </div>
                 </div>
             </section>
-            <div className='w-screen h-[70em] absolute -bottom-[20%] sm:-bottom-[10%] -right-[15%]'>
+            <div className='w-screen h-[70em] absolute -bottom-[20%] sm:-bottom-[10%] -right-[15%] -z-[1]'>
                 <Image
                     src={gradient3Img}
                     alt='Background'
@@ -204,7 +204,7 @@ export default function Page() {
                 />
             </div>
 
-            <div className='w-screen h-[70em] absolute top-[90em] -left-[15%]'>
+            <div className='w-screen h-[70em] absolute top-[90em] -left-[15%] -z-[1]'>
                 <Image
                     src={gradient2Img}
                     alt='Background'
@@ -213,7 +213,7 @@ export default function Page() {
                 />
             </div>
 
-            <div className='w-screen h-[70em] absolute top-[250em] -right-[15%]'>
+            <div className='w-screen h-[70em] absolute top-[250em] -right-[15%] -z-[1]'>
                 <Image
                     src={gradient1Img}
                     alt='Background'

@@ -143,7 +143,7 @@ export default function Page() {
                     </div>
                 </div>
             </section>
-            <div className='w-screen h-[70em] absolute -top-[20%] sm:-top-[10%] -left-[15%]'>
+            <div className='w-screen h-[70em] absolute -top-[20%] sm:-top-[10%] -left-[15%] -z-[1]'>
                 <Image src={looperImg} alt='Background' aria-hidden priority />
             </div>
         </main>

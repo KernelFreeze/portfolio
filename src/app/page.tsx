@@ -84,8 +84,9 @@ export default function Page() {
                                     <span className='bg-gradient-to-b from-[#1791c9] to-[#6fe5ee] bg-clip-text text-transparent'>
                                         Celeste Pel&aacute;ez
                                     </span>
-                                    , a passionate software artisan hailing from
-                                    the vibrant landscapes of{' '}
+                                    , formerly known as KernelFreeze. I&apos;m a
+                                    passionate software artisan hailing from the
+                                    vibrant landscapes of{' '}
                                     <span className='bg-gradient-to-b from-[#c568b1] to-[#d317aa] bg-clip-text text-transparent'>
                                         &nbsp;Colombia.&nbsp;
                                     </span>
@@ -206,7 +207,7 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
-                <div className='w-screen h-[70em] absolute -top-[20%] sm:-top-[10%] -left-[15%]'>
+                <div className='w-screen h-[70em] absolute -top-[20%] sm:-top-[10%] -left-[15%] -z-[1]'>
                     <Image
                         src={gradientImg}
                         alt='Background'
