@@ -18,9 +18,9 @@ import uhcImg from '~/minecraft/uhc.webp'
 import backroomsImg from '~/minecraft/backrooms.jpg'
 import hormigeoImg from '~/minecraft/hormigeo.jpg'
 import launcherImg from '~/minecraft/launcher.png'
-import gradient1Img from '~/gradients/blue-purple-3.svg'
+import gradient1Img from '~/gradients/blue-purple-1.svg'
 import gradient2Img from '~/gradients/blue-purple-2.svg'
-import gradient3Img from '~/gradients/blue-purple-1.svg'
+import gradient3Img from '~/gradients/blue-purple-3.svg'
 
 const DynamicStarParticles = dynamic(
     () => import('@/app/components/particles'),

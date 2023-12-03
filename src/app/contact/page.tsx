@@ -2,6 +2,8 @@ import Navbar from '@/app/components/navbar'
 import { Card, CardBody } from '@nextui-org/react'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
+import gradientImg from '~/gradients/blue-purple-1.svg'
+import avatarImg from '~/avatar.webp'
 
 const DynamicStarParticles = dynamic(
     () => import('@/app/components/particles'),
@@ -38,11 +40,10 @@ export default function Page() {
                                     className='flex relative justify-center items-center box-border overflow-hidden align-middle z-0 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 w-14 h-14 text-small bg-default text-default-foreground rounded-full'
                                 >
                                     <Image
-                                        src='/avatar.webp'
+                                        src={avatarImg}
                                         className='object-cover'
                                         alt='Celeste Peláez'
-                                        aria-hidden
-                                        fill={true}
+                                        placeholder='blur'
                                     />
                                 </span>
 
@@ -59,10 +60,9 @@ export default function Page() {
                     </Card>
                 </div>
             </section>
-            <div className='w-screen h-[70em] absolute -top-[20%] sm:-top-[10%] -left-[15%]'>
+            <div className='w-screen h-[70em] absolute -top-[20%] sm:-top-[10%] -left-[15%] -z-[1]'>
                 <Image
-                    fill
-                    src='/gradients/blue-purple-1.svg'
+                    src={gradientImg}
                     alt='Background'
                     aria-hidden
                     priority
