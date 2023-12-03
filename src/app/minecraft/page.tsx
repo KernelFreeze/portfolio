@@ -1,5 +1,7 @@
 import Navbar from '@/app/components/navbar'
 import { Card, CardBody, CardHeader, Divider } from '@nextui-org/react'
+import { PropsWithChildren, ReactNode } from 'react'
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import permadeathImg from '~/minecraft/permadeath.webp'
@@ -9,15 +11,16 @@ import elitecraftImg from '~/minecraft/elitecraft.jpg'
 import squidcraftImg from '~/minecraft/squidcraft.jpg'
 import sawImg from '~/minecraft/saw.jpg'
 import dedsafioImg from '~/minecraft/dedsafio.jpg'
-import laVeladaImg from '~/minecraft/lavelada.jpg'
+import laVeladaImg from '~/minecraft/lavelada.webp'
 import elHoyoImg from '~/minecraft/elhoyo.jpg'
 import eddtImg from '~/minecraft/eddt.jpg'
 import uhcImg from '~/minecraft/uhc.webp'
 import backroomsImg from '~/minecraft/backrooms.jpg'
 import hormigeoImg from '~/minecraft/hormigeo.jpg'
 import launcherImg from '~/minecraft/launcher.png'
-import { PropsWithChildren, ReactNode } from 'react'
-import { StaticImport } from 'next/dist/shared/lib/get-img-props'
+import gradient1Img from '~/gradients/blue-purple-3.svg'
+import gradient2Img from '~/gradients/blue-purple-2.svg'
+import gradient3Img from '~/gradients/blue-purple-1.svg'
 
 const DynamicStarParticles = dynamic(
     () => import('@/app/components/particles'),
@@ -194,8 +197,7 @@ export default function Page() {
             </section>
             <div className='w-screen h-[70em] absolute -bottom-[20%] sm:-bottom-[10%] -right-[15%]'>
                 <Image
-                    fill
-                    src='/gradients/blue-purple-3.svg'
+                    src={gradient3Img}
                     alt='Background'
                     aria-hidden
                     priority
@@ -204,8 +206,7 @@ export default function Page() {
 
             <div className='w-screen h-[70em] absolute top-[90em] -left-[15%]'>
                 <Image
-                    fill
-                    src='/gradients/blue-purple-2.svg'
+                    src={gradient2Img}
                     alt='Background'
                     aria-hidden
                     priority
@@ -214,8 +215,7 @@ export default function Page() {
 
             <div className='w-screen h-[70em] absolute top-[250em] -right-[15%]'>
                 <Image
-                    fill
-                    src='/gradients/blue-purple-1.svg'
+                    src={gradient1Img}
                     alt='Background'
                     aria-hidden
                     priority
@@ -238,9 +238,9 @@ function ProjectCard({
     return (
         <Card className='mt-10 py-4 w-full'>
             <CardHeader className='pb-6 px-4 flex-col items-start'>
-                <h4 className='font-bold text-3xl text-center w-full'>
+                <h2 className='font-bold text-3xl text-center w-full'>
                     {title}
-                </h4>
+                </h2>
             </CardHeader>
             <Divider />
             <CardBody className='overflow-visible py-8 w-full grid grid-cols-1 2xl:grid-cols-2 gap-10'>

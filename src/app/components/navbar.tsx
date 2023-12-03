@@ -101,22 +101,26 @@ export default function Navbar({ pageId }: NavbarProps) {
             }}
         >
             <NavbarContent>
-                <NavbarMenuToggle
-                    aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-                    className='lg:hidden'
-                />
-                <NavbarBrand>
-                    <Link
-                        prefetch={true}
-                        className='text-foreground inline-block'
-                        href='/'
-                    >
-                        <Logo aria-hidden className='mr-2 inline' />
-                        <p className='font-bold text-inherit inline'>
-                            CelesteLove Portfolio
-                        </p>
-                    </Link>
-                </NavbarBrand>
+                <NavbarItem>
+                    <NavbarMenuToggle
+                        aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+                        className='lg:hidden'
+                    />
+                </NavbarItem>
+                <NavbarItem>
+                    <NavbarBrand>
+                        <Link
+                            prefetch={true}
+                            className='text-foreground inline-block'
+                            href='/'
+                        >
+                            <Logo aria-hidden className='mr-2 inline' />
+                            <p className='font-bold text-inherit inline'>
+                                CelesteLove Portfolio
+                            </p>
+                        </Link>
+                    </NavbarBrand>
+                </NavbarItem>
             </NavbarContent>
             <NavbarContent className='hidden lg:flex gap-4' justify='center'>
                 {menuItems.map(item => {

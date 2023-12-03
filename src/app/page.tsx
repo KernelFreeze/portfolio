@@ -5,6 +5,7 @@ import { PiBroom } from 'react-icons/pi'
 import dynamic from 'next/dynamic'
 import loveImg from '~/love.png'
 import avatarImg from '~/avatar.webp'
+import gradientImg from '~/gradients/blue-purple-1.svg'
 
 const DynamicStarParticles = dynamic(() => import('./components/particles'), {
     ssr: false,
@@ -54,6 +55,7 @@ export default function Page() {
                                             src={avatarImg}
                                             className='object-cover'
                                             alt='Celeste Peláez'
+                                            placeholder='blur'
                                             aria-hidden
                                         />
                                     </span>
@@ -206,8 +208,7 @@ export default function Page() {
                 </div>
                 <div className='w-screen h-[70em] absolute -top-[20%] sm:-top-[10%] -left-[15%]'>
                     <Image
-                        fill
-                        src='/gradients/blue-purple-1.svg'
+                        src={gradientImg}
                         alt='Background'
                         aria-hidden
                         priority

@@ -10,6 +10,7 @@ import pingImg from '~/opensource/ping.png'
 import bedrockProxyImg from '~/opensource/bedrock-proxy.png'
 import msaAuthImg from '~/opensource/msa-auth.png'
 import { Link } from '@nextui-org/react'
+import looperImg from '~/gradients/looper-pattern.svg'
 
 const DynamicStarParticles = dynamic(
     () => import('@/app/components/particles'),
@@ -143,13 +144,7 @@ export default function Page() {
                 </div>
             </section>
             <div className='w-screen h-[70em] absolute -top-[20%] sm:-top-[10%] -left-[15%]'>
-                <Image
-                    fill
-                    src='/gradients/looper-pattern.svg'
-                    alt='Background'
-                    aria-hidden
-                    priority
-                />
+                <Image src={looperImg} alt='Background' aria-hidden priority />
             </div>
         </main>
     )
@@ -168,9 +163,9 @@ function ProjectCard({
     return (
         <Card className='mt-10 py-4 w-full'>
             <CardHeader className='pb-6 px-4 flex-col items-start'>
-                <h4 className='font-bold text-3xl text-center w-full'>
+                <h2 className='font-bold text-3xl text-center w-full'>
                     {title}
-                </h4>
+                </h2>
             </CardHeader>
             <Divider />
             <CardBody className='overflow-visible py-8 w-full grid grid-cols-1 2xl:grid-cols-2 gap-10'>
