@@ -59,13 +59,13 @@ export default function Navbar({ pageId }: NavbarProps) {
             id: 'minecraft',
             link: '/minecraft',
             prefetch: true,
-            displayName: 'Minecraft',
+            displayName: 'Minecraft Work',
         },
         {
             id: 'open_source',
             link: '/open_source',
             prefetch: true,
-            displayName: 'Open Source',
+            displayName: 'Open Source Work',
         },
         {
             id: 'github',
