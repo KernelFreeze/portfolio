@@ -6,6 +6,7 @@ import { NextUIProvider } from './providers/next-ui'
 import { PropsWithChildren } from 'react'
 import { cn } from '@nextui-org/react'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const ubuntu = Ubuntu({ weight: '400', subsets: ['latin'] })
 
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: PropsWithChildren<{}>) {
             <body className={cn('overflow-x-hidden', ubuntu.className)}>
                 <NextUIProvider>{children}</NextUIProvider>
                 <Analytics />
+                <SpeedInsights />
             </body>
         </html>
     )
