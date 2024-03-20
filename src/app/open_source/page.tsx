@@ -30,7 +30,12 @@ export default function Page() {
                     <h1 className='tracking-tight inline font-semibold text-[2.5rem] lg:text-6xl'>
                         Open Source
                     </h1>
-                    <h1 className='tracking-tight inline font-semibold text-[2.1rem] lg:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-[#FF1CF7] to-[#b249f8]'>
+                    <h1
+                        className='tracking-tight inline font-semibold text-[2.1rem] lg:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-[#FF1CF7] to-[#b249f8]'
+                        style={{
+                            paddingBottom: '5px',
+                        }}
+                    >
                         projects that I&apos;ve made
                     </h1>
                     <div className='flex flex-col mt-1 md:mt-5 items-center p-8 md:w-6/12'>
