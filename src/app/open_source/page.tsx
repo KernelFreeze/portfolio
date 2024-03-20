@@ -161,10 +161,10 @@ interface ProjectCardProps {
 }
 
 function ProjectCard({
-                         children,
-                         title,
-                         img,
-                     }: PropsWithChildren<ProjectCardProps>) {
+    children,
+    title,
+    img,
+}: PropsWithChildren<ProjectCardProps>) {
     return (
         <Card className='mt-10 py-4 w-full'>
             <CardHeader className='pb-6 px-4 flex-col items-start'>
