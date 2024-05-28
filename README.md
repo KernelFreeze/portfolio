@@ -1,10 +1,10 @@
 My personal portfolio built using Next.js, Tailwind CSS, NextUI and deployed on Vercel. This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# License [![https://github.com/KernelFreeze/portfolio/blob/main/LICENSE](https://img.shields.io/github/license/PrismLauncher/PrismLauncher?label=License&logo=mit&color=C4282D)](LICENSE)
+# License [![https://github.com/KernelFreeze/portfolio/blob/main/LICENSE](https://img.shields.io/github/license/KernelFreeze/portfolio?label=License&logo=mit&color=C4282D)](LICENSE)
 
-All source code is available under the MIT license.
+The source code for the project is available under the MIT license.
 
-My logo, image assets and pictures are under the CC BY-NC-ND 4.0 license.
+My logo (`love.png`), non code assets, and other images in the `public` folder are under the [CC BY-NC-ND](https://github.com/KernelFreeze/portfolio/blob/main/ASSETS-LICENSE) 4.0 license.
 
 ## Getting Started
 
