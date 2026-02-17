@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { PiBroom } from 'react-icons/pi'
 import dynamic from 'next/dynamic'
 import loveImg from '~/love.png'
-import avatarImg from '~/avatar.webp'
+import avatarImg from '~/avatar.png'
 import gradientImg from '~/gradients/blue-purple-1.svg'
 
 const DynamicStarParticles = dynamic(() => import('./components/particles'), {
@@ -85,19 +85,15 @@ export default function Page() {
                                     <span className='bg-gradient-to-b from-[#1791c9] to-[#6fe5ee] bg-clip-text text-transparent'>
                                         Celeste Pel&aacute;ez
                                     </span>
-                                    , formerly known as KernelFreeze. I&apos;m a
-                                    passionate software artisan hailing from the
-                                    vibrant landscapes of{' '}
+                                    , also known as KernelFreeze. I&apos;m a
+                                    software developer from
                                     <span className='bg-gradient-to-b from-[#c568b1] to-[#d317aa] bg-clip-text text-transparent'>
-                                        &nbsp;Colombia.&nbsp;
+                                        &nbsp;Colombia&nbsp;
                                     </span>
-                                    My journey into the world of coding began at
-                                    the tender age of 11, fueled by a desire to
-                                    unravel the mysteries of technology. Since
-                                    those early days, my love for software
-                                    development has only intensified, propelling
-                                    me into a realm of continuous learning and
-                                    innovation.
+                                    who&apos;s been coding since I was 11.
+                                    What started as curiosity quickly became a
+                                    passion, and I&apos;ve been building and
+                                    learning ever since.
                                 </p>
                             </div>
                             <div className='hidden xl:flex mt-32'>

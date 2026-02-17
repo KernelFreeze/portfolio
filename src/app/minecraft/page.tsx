@@ -1,3 +1,4 @@
+"use client"
 import Navbar from '@/app/components/navbar'
 import { Card, CardBody, CardHeader, Divider } from "@heroui/react"
 import { PropsWithChildren, ReactNode } from 'react'
