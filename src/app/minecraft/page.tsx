@@ -48,150 +48,131 @@ export default function Page() {
                     <div className='flex flex-col mt-1 md:mt-5 items-center p-8 md:w-6/12'>
                         <ProjectCard title='UHC España' img={uhcImg}>
                             UHC España is a Minecraft event series created by
-                            ElRichMC and developed by CelesteLove, based on the
-                            Mindcrack UHC series. It involves teams or
-                            individual players competing in a large map without
-                            natural health regeneration. Unique mechanics have
-                            been introduced over time, such as the ability to
-                            revive dead teammates, or a skin changing system. I
-                            was tasked with developing the plugin used in the
-                            events that allowed the required custom mechanics.
+                            ElRichMC, inspired by the Mindcrack UHC series.
+                            Teams or individual players compete across a large
+                            map without natural health regeneration. Over time,
+                            we introduced unique mechanics like teammate
+                            revival and a skin changing system. I developed the
+                            plugin that powered all of these custom mechanics.
                         </ProjectCard>
                         <ProjectCard title='Elitecraft' img={elitecraftImg}>
-                            Elitecraft was a Minecraft survival SMP server. On
-                            it, I worked on developing the infrastructure, but
-                            also optimization and performance mods to allow
-                            dozens of players to play without lag.
+                            Elitecraft was a Minecraft survival SMP server
+                            where I handled both the infrastructure and the
+                            development of optimization and performance mods,
+                            keeping the experience smooth for dozens of
+                            simultaneous players.
                         </ProjectCard>
                         <ProjectCard title='Permadeath' img={permadeathImg}>
-                            Permadeath was an original event developed and
-                            hosted by me. The event took place in a normal world
-                            of survival without limits in Minecraft version
-                            1.15.2. In this event the difficulty is set to
-                            Hardcore Difficulty, that is, your death inside the
-                            server would be permanent and you would be
-                            permanently banned. The difference with other events
-                            is that it has a custom gameplay, items, abilities,
-                            bosses, and mobs that make the game harder. Each
-                            week a new change was implemented in the game until
-                            all players died.
+                            Permadeath was an original event that I developed
+                            and hosted. Set in Minecraft 1.15.2 on Hardcore
+                            difficulty, dying meant a permanent ban from the
+                            server. What set it apart was the fully custom
+                            gameplay: unique items, abilities, bosses, and mobs
+                            that made survival progressively harder. Every week
+                            I introduced new challenges until every last player
+                            had fallen.
                         </ProjectCard>
                         <ProjectCard title='Calvaland' img={calvalandImg}>
-                            Calvaland was an SMP server created by TheGrefg in
-                            which several Spanish-speaking content creators
-                            participated. It contained different mods made by me
-                            programmed using FabricMC.
+                            Calvaland was an SMP server created by TheGrefg,
+                            featuring several Spanish-speaking content
+                            creators. I developed the custom mods for the
+                            server using FabricMC.
                         </ProjectCard>
                         <ProjectCard title='TortillaLand' img={tortillaLandImg}>
                             TortillaLand was a multiplayer survival series
                             created by AuronPlay in collaboration with Heberon.
-                            In it, I had the opportunity to program different
-                            mods and high quality content. For example, I
-                            developed a mod that allowed to have realistic
-                            &ldquo;Samsung&rdquo; phones in the game.
+                            I programmed several mods and high-quality content
+                            for the series, including a mod that added fully
+                            functional, realistic &ldquo;Samsung&rdquo; phones
+                            to the game.
                         </ProjectCard>
                         <ProjectCard
                             title='SquidCraft Games 1 & 2'
                             img={squidcraftImg}
                         >
                             Squidcraft Games is a Minecraft tournament for
-                            streamers, which was held in a custom mode inspired
-                            by the popular TV series &ldquo;The Squid
-                            Game&rdquo;. There were 150 participants who are the
-                            platform&apos;s most famous Spanish-speaking
-                            creators (including Ibai, Rubius and Auronplay).
-                            They competed in various mini-games over five days
-                            and were eliminated from the event one by one. In
-                            both editions of the project I programmed the mods
-                            that add content to the game such as blocks,
-                            entities, items, etc, in addition to gameplay mods
-                            and mechanics specific to that project. I was also
-                            in charge of maintaining the infrastructure and
-                            servers so that 200 players could play without lag.
+                            streamers inspired by the TV series &ldquo;The
+                            Squid Game&rdquo;. Over five days, 150 of the
+                            biggest Spanish-speaking creators (including Ibai,
+                            Rubius, and Auronplay) competed in mini-games and
+                            were eliminated one by one. Across both editions, I
+                            programmed the content mods (blocks, entities,
+                            items) as well as the gameplay mechanics, and
+                            maintained the infrastructure to keep 200
+                            concurrent players lag-free.
                         </ProjectCard>
                         <ProjectCard title='Saw Minecraft Games' img={sawImg}>
-                            Saw Minecraft Games was an adaptation of the popular
-                            &ldquo;Saw&rdquo; movie series to Minecraft as a
-                            multiplayer story in which content creators could
-                            compete to survive the challenge. In this project, I
-                            programmed the &ldquo;core&rdquo; mods, as well as
-                            multiple mechanics and gameplay with realistic
-                            physics such as ropes dragging the player. I was
-                            also in charge of maintaining the infrastructure and
+                            Saw Minecraft Games adapted the &ldquo;Saw&rdquo;
+                            movie franchise into a multiplayer Minecraft
+                            experience where content creators competed to
+                            survive deadly challenges. I built the core mods
+                            along with gameplay mechanics featuring realistic
+                            physics, such as ropes that physically drag
+                            players. I also managed the infrastructure and
                             servers.
                         </ProjectCard>
                         <ProjectCard title='Dedsafio 2' img={dedsafioImg}>
-                            Dedsafio was an original Minecraft series, created
-                            by ElDed, and inspired by the success of Permadeath
-                            by ElRichMC and CelesteLove. It was a survival SMP
-                            server in which the difficulty increased daily with
-                            challenges created by a magic roulette. Players who
-                            died had the chance to be revived by teammates.
-                            <br />I had the opportunity to participate in the
-                            second edition of this series programming several
-                            mechanics and systems in specialized mods, in
-                            addition to taking care of the infrastructure and
-                            maintenance of the server.
+                            Dedsafio was an original Minecraft series created
+                            by ElDed, inspired by the success of Permadeath by
+                            ElRichMC and CelesteLove. It was a survival SMP
+                            where difficulty escalated daily through challenges
+                            spun by a magic roulette, and fallen players could
+                            be revived by their teammates.
+                            <br />For the second edition, I programmed several
+                            mechanics and systems as specialized mods, and
+                            handled the server infrastructure and maintenance.
                         </ProjectCard>
                         <ProjectCard
                             title='La Velada del Año'
                             img={laVeladaImg}
                         >
-                            &ldquo;La Velada del Año&rdquo; (&ldquo;The Evening
-                            of the Year&rdquo; in english) was an event
-                            organized by Ibai for TortillaLand. It consisted of
-                            a Minecraft replica of the event with the same name
-                            in which different &ldquo;fighters&rdquo;
-                            participate in a boxing ring. This event used
-                            multiple mods that I developed that added all the
-                            in-game content.
+                            &ldquo;La Velada del Año&rdquo; (&ldquo;The
+                            Evening of the Year&rdquo;) was an event organized
+                            by Ibai for TortillaLand. It recreated the
+                            real-life boxing event of the same name inside
+                            Minecraft, complete with a boxing ring and
+                            fighters. I developed the mods that brought all of
+                            the in-game content to life.
                         </ProjectCard>
                         <ProjectCard title='El Hoyo' img={elHoyoImg}>
                             El Hoyo was a Minecraft event inspired by the
-                            Spanish movie &ldquo;The Platform (2019)&rdquo;. The
-                            event is set in a large, tower-style &ldquo;Vertical
-                            Self-Management Center.&rdquo; Its residents are fed
-                            via a platform which, initially filled with food at
-                            the top floor, gradually descends through the
-                            tower&apos;s levels, stopping for a fixed amount of
-                            time on each. In this event I was in charge of
-                            developing the &ldquo;core&rdquo; mods that allowed
-                            the addition of items, entities, blocks, etc.
+                            Spanish film &ldquo;The Platform (2019)&rdquo;. Set
+                            inside a towering &ldquo;Vertical Self-Management
+                            Center,&rdquo; a food-laden platform descends
+                            floor by floor, pausing briefly at each level
+                            before moving on. I developed the core mods that
+                            powered the custom items, entities, and blocks for
+                            the event.
                         </ProjectCard>
                         <ProjectCard title='Hormigeo' img={hormigeoImg}>
-                            Hormigeo was a competitive Minecraft event in which
-                            different teams formed groups of &ldquo;Ants&rdquo;
-                            and tried to be the winners. In this event I was in
-                            charge of developing basic mods.
+                            Hormigeo was a competitive Minecraft event where
+                            teams of &ldquo;Ants&rdquo; faced off to claim
+                            victory. I developed the foundational mods for the
+                            event.
                         </ProjectCard>
                         <ProjectCard title='The Backrooms' img={backroomsImg}>
-                            The Backrooms is a Minecraft event based on a
-                            fictional concept originating from a creepypasta,
-                            which depicts usually busy locations as unnaturally
-                            empty. The first level of The Backrooms is a maze of
-                            empty office rooms filled with monsters. In this
-                            event I was tasked with developing the
-                            infrastructure mods that add items, entities, blocks
-                            and other core functionality.
+                            The Backrooms is a Minecraft event based on the
+                            creepypasta of the same name, where familiar places
+                            feel unsettlingly empty. The first level is a maze
+                            of abandoned office rooms crawling with monsters. I
+                            developed the infrastructure mods that added the
+                            custom items, entities, blocks, and other core
+                            functionality.
                         </ProjectCard>
                         <ProjectCard title='El Dios del todo' img={eddtImg}>
                             &ldquo;El Dios del todo&rdquo; (&ldquo;The God of
                             Everything&rdquo;) is a Minecraft series created by
-                            Juan Guarnizo that he starred in. It was an
-                            individual project, not a collaborative series with
-                            other streamers. Based in the lore of
-                            &ldquo;TortillaLand&rdquo; it was a custom adventure
-                            developed by us. In it, I programmed important base
-                            mods that were used throughout the event.
+                            and starring Juan Guarnizo. Unlike collaborative
+                            SMPs, this was a solo adventure rooted in the lore
+                            of &ldquo;TortillaLand.&rdquo; I programmed the
+                            core mods that powered the experience throughout.
                         </ProjectCard>
                         <ProjectCard title='Eufonia Launcher' img={launcherImg}>
-                            Eufonia Launcher is a Launcher that allows you to
-                            access custom Minecraft instances, and automatically
-                            manages the download of mods, assets, videos, etc.
-                            It also has systems that allow you to upload mods
-                            with a simple and intuitive interface. It uses an
-                            efficient download system that allows fast and easy
-                            downloads.
+                            Eufonia Launcher is a custom Minecraft launcher
+                            that manages instances, mods, assets, and other
+                            resources automatically. It features an intuitive
+                            interface for uploading mods and an efficient
+                            download system designed for speed and reliability.
                         </ProjectCard>
                     </div>
                 </div>

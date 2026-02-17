@@ -48,13 +48,11 @@ export default function Page() {
                             >
                                 WebSocketFabric
                             </Link>{' '}
-                            is an open source project that allows using
-                            WebSocket as the Minecraft&apos;s transport layer.
-                            The advantage of this approach is that you can use
-                            web protection services like Cloudflare to protect
-                            your server from DDoS attacks while reducing the
-                            round-trip-time when sending data packets to the
-                            server.
+                            replaces Minecraft&apos;s transport layer with
+                            WebSocket, letting you put web protection services
+                            like Cloudflare in front of your server. This
+                            shields it from DDoS attacks while also cutting
+                            down round-trip times for data packets.
                         </ProjectCard>
                         <ProjectCard
                             title='Bedrock Proxy'
@@ -67,9 +65,9 @@ export default function Page() {
                             >
                                 BedrockProxy
                             </Link>{' '}
-                            adds support for the Minecraft Bedrock protocol to
-                            Minecraft Java edition servers as well as allowing
-                            you to use Xbox Live authentication.
+                            bridges Minecraft Bedrock and Java Edition,
+                            allowing Bedrock players to join Java servers with
+                            full Xbox Live authentication support.
                         </ProjectCard>
                         <ProjectCard
                             title='Minecraft MSA Auth for Rust'
@@ -82,9 +80,10 @@ export default function Page() {
                             >
                                 Minecraft MSA Auth
                             </Link>{' '}
-                            allows you to authenticate into Minecraft online
-                            services using a Microsoft Oauth2 token. This is
-                            useful for writing custom Minecraft launchers.
+                            is a Rust library that handles authentication with
+                            Minecraft&apos;s online services through Microsoft
+                            OAuth2, making it easy to build custom Minecraft
+                            launchers and tools.
                         </ProjectCard>
                         <ProjectCard title='Etheryal Kernel' img={kernelImg}>
                             <Link
@@ -94,7 +93,7 @@ export default function Page() {
                             >
                                 etheryal kernel
                             </Link>{' '}
-                            is an open source capability-based operating system
+                            is a capability-based operating system
                             <Link
                                 href='https://en.wikipedia.org/wiki/Kernel_(operating_system)'
                                 isExternal
@@ -102,18 +101,14 @@ export default function Page() {
                             >
                                 &nbsp;kernel&nbsp;
                             </Link>
-                            written in the Rust programming language. The kernel
-                            allows implementing a language-based operating
-                            system, unlike most historic kernels, etheryal
-                            kernel components execute in the same address space
-                            (process), which contains software-isolated
-                            processes (SIPs). Each SIP has its own data and code
-                            layout, and is independent from other SIPs. These
-                            SIPs behave like normal processes, but avoid the
-                            cost of task-switches. The kernel uses a modular
-                            design based on Webassembly System Interface (WASI),
-                            containerizing drivers and user-space applications
-                            in a safe lightweight sandbox (WASM). Just like{' '}
+                            written in Rust. Unlike traditional kernels,
+                            etheryal runs all components in the same address
+                            space using software-isolated processes (SIPs).
+                            Each SIP has its own data and code layout, behaving
+                            like a regular process but without the overhead of
+                            task-switching. Drivers and user-space applications
+                            are sandboxed through WebAssembly (WASI), keeping
+                            everything modular and safe. Inspired by{' '}
                             <Link
                                 href='https://en.wikipedia.org/wiki/Singularity_(operating_system)'
                                 isExternal
@@ -121,8 +116,8 @@ export default function Page() {
                             >
                                 Singularity
                             </Link>
-                            , etheryal internal security uses type safety
-                            instead of hardware memory protection.
+                            , it relies on type safety rather than hardware
+                            memory protection for internal security.
                         </ProjectCard>
                         <ProjectCard title='Litecraft' img={litecraftImg}>
                             <Link
@@ -132,19 +127,16 @@ export default function Page() {
                             >
                                 Litecraft
                             </Link>{' '}
-                            was a clean-room implementation of the Minecraft
-                            client written in the Rust programming language. I
-                            started programming when I was 14 years old, and a
-                            few years later other programmers joined me in its
-                            development. This project taught me a lot about
-                            software development and good programming practices.
-                            I never finished it but it was a great learning
-                            experience for me and the contributors who helped
-                            me.
+                            was a clean-room Minecraft client written in Rust.
+                            I started it when I was 14, and over time other
+                            developers joined in. While it was never finished,
+                            it taught me a great deal about software
+                            development and collaboration, and it remains one
+                            of my most formative projects.
                             <br />
-                            At that time, version 1.0 of Rust had not yet been
-                            released, so it was interesting to see the
-                            development of this programming language.
+                            This was back before Rust 1.0 had even shipped, so
+                            I got to experience the language evolving alongside
+                            the project itself.
                         </ProjectCard>
                     </div>
                 </div>
