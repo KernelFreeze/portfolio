@@ -1,5 +1,6 @@
+"use client"
 import Navbar from '@/app/components/navbar'
-import { Card, CardBody } from '@nextui-org/react'
+import { Card, CardBody } from "@heroui/react"
 import Image from 'next/image'
 import { PiBroom } from 'react-icons/pi'
 import dynamic from 'next/dynamic'

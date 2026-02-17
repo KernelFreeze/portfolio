@@ -2,9 +2,9 @@ import './globals.css'
 
 import type { Metadata } from 'next'
 import { Ubuntu } from 'next/font/google'
-import { NextUIProvider } from './providers/next-ui'
+import { HeroUIProvider } from './providers/next-ui'
 import { PropsWithChildren } from 'react'
-import { cn } from '@nextui-org/react'
+import { cn } from "@heroui/react"
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: PropsWithChildren<{}>) {
     return (
-        <html lang='en'>
+        <html className='dark' lang='en'>
             <body className={cn('overflow-x-hidden', ubuntu.className)}>
-                <NextUIProvider>{children}</NextUIProvider>
+                <HeroUIProvider>{children}</HeroUIProvider>
                 <Analytics />
                 <SpeedInsights />
             </body>

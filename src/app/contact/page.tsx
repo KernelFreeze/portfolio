@@ -1,5 +1,5 @@
 import Navbar from '@/app/components/navbar'
-import { Card, CardBody } from '@nextui-org/react'
+import { Card, CardBody } from "@heroui/react"
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import gradientImg from '~/gradients/blue-purple-1.svg'

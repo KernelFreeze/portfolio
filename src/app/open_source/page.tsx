@@ -1,5 +1,5 @@
 import Navbar from '@/app/components/navbar'
-import { Card, CardBody, CardHeader, Divider } from '@nextui-org/react'
+import { Card, CardBody, CardHeader, Divider } from "@heroui/react"
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
@@ -9,7 +9,7 @@ import litecraftImg from '~/opensource/litecraft.png'
 import pingImg from '~/opensource/ping.png'
 import bedrockProxyImg from '~/opensource/bedrock-proxy.png'
 import msaAuthImg from '~/opensource/msa-auth.png'
-import { Link } from '@nextui-org/react'
+import { Link } from "@heroui/react"
 import looperImg from '~/gradients/looper-pattern.svg'
 
 const DynamicStarParticles = dynamic(

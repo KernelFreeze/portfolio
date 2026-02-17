@@ -11,7 +11,7 @@ import {
     NavbarMenu,
     NavbarMenuItem,
     cn,
-} from '@nextui-org/react'
+} from "@heroui/react"
 import { Comfortaa } from 'next/font/google'
 import { Logo } from './logo'
 import Link from './link'

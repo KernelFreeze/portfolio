@@ -1,5 +1,5 @@
 import Navbar from '@/app/components/navbar'
-import { Card, CardBody, CardHeader, Divider } from '@nextui-org/react'
+import { Card, CardBody, CardHeader, Divider } from "@heroui/react"
 import { PropsWithChildren, ReactNode } from 'react'
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import dynamic from 'next/dynamic'

@@ -1,6 +1,6 @@
-import { forwardRef } from '@nextui-org/system'
+import { forwardRef } from "@heroui/system"
 
-import { UserProps, AvatarIcon, useAvatar, useUser } from '@nextui-org/react'
+import { UserProps, AvatarIcon, useAvatar, useUser } from "@heroui/react"
 import Image from 'next/image'
 import { useMemo } from 'react'
 

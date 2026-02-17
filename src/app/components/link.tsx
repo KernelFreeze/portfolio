@@ -1,8 +1,8 @@
 import { forwardRef } from 'react'
-import { LinkIcon } from '@nextui-org/shared-icons'
-import { linkAnchorClasses } from '@nextui-org/theme'
+import { LinkIcon } from "@heroui/shared-icons"
+import { linkAnchorClasses } from "@heroui/theme"
 
-import { LinkProps as UIProps, useLink } from '@nextui-org/react'
+import { LinkProps as UIProps, useLink } from "@heroui/react"
 import { default as NextLink, LinkProps as NextProps } from 'next/link'
 
 const Link = forwardRef<HTMLAnchorElement, UIProps & NextProps>(
@@ -25,7 +25,7 @@ const Link = forwardRef<HTMLAnchorElement, UIProps & NextProps>(
                     {showAnchorIcon && anchorIcon}
                 </>
             </NextLink>
-        )
+        );
     }
 )
 
