@@ -126,10 +126,11 @@ export default function Page() {
                                     </div>
                                     <div className='relative flex w-full p-3 flex-auto flex-col place-content-inherit align-items-inherit h-auto break-words text-left overflow-y-auto subpixel-antialiased'>
                                         <p className='font-normal text-base text-default-500'>
-                                            I mostly code in Rust, Java,
-                                            Typescript and Python, but I also
-                                            know C, C++, Go, Ruby, C#, Lua, PHP,
-                                            Kotlin among others.
+                                            Proficient in Rust, Java,
+                                            TypeScript, and Python, with
+                                            hands-on experience in C, C++, Go,
+                                            Ruby, C#, Lua, PHP, and Kotlin,
+                                            among others.
                                         </p>
                                     </div>
                                 </div>
@@ -147,9 +148,11 @@ export default function Page() {
                                     </div>
                                     <div className='relative flex w-full p-3 flex-auto flex-col place-content-inherit align-items-inherit h-auto break-words text-left overflow-y-auto subpixel-antialiased'>
                                         <p className='font-normal text-base text-default-500'>
-                                            I can easily integrate myself into a
-                                            development team and learn quickly
-                                            about a pre-existing code base.
+                                            I integrate smoothly into
+                                            development teams, quickly
+                                            ramping up on existing codebases
+                                            and collaborating effectively to
+                                            deliver results.
                                         </p>
                                     </div>
                                 </div>
@@ -167,13 +170,12 @@ export default function Page() {
                                     </div>
                                     <div className='relative flex w-full p-3 flex-auto flex-col place-content-inherit align-items-inherit h-auto break-words text-left overflow-y-auto subpixel-antialiased'>
                                         <p className='font-normal text-base text-default-500'>
-                                            I love writing clean and readable
-                                            source code, always trying to apply
-                                            available design patterns. I also
-                                            use the most efficient data
-                                            structures to every problem to
-                                            maintain the required performance
-                                            profiles to every application.
+                                            I strive to write clean, readable
+                                            code by applying proven design
+                                            patterns and choosing the right
+                                            data structures to meet each
+                                            application&apos;s performance
+                                            requirements.
                                         </p>
                                     </div>
                                 </div>
@@ -192,11 +194,10 @@ export default function Page() {
                                     <div className='relative flex w-full p-3 flex-auto flex-col place-content-inherit align-items-inherit h-auto break-words text-left overflow-y-auto subpixel-antialiased'>
                                         <p className='font-normal text-base text-default-500'>
                                             I write unit tests for every
-                                            component coded by me to check that
-                                            it&apos;s semantically correct. I
-                                            also thoroughly test the application
-                                            to make sure it works correctly
-                                            before submitting my changes.
+                                            component I build to ensure
+                                            correctness, and thoroughly
+                                            validate the full application
+                                            before submitting any changes.
                                         </p>
                                     </div>
                                 </div>

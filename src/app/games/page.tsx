@@ -1,3 +1,4 @@
+"use client"
 import Navbar from '@/app/components/navbar'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
@@ -15,12 +16,12 @@ export default function Page() {
             <Navbar pageId='games' />
             <DynamicStarParticles />
 
-            <section className='flex flex-col gap-2 mt-1 sm:mt-5 min-h-screen bg-[center_right_20%] bg-no-repeat z-[100]'>
+            <section className='flex flex-col gap-2 mt-1 sm:mt-5 min-h-screen bg-position-[center_right_20%] bg-no-repeat z-100'>
                 <div className='flex flex-col items-center justify-center h-full w-full mt-10'>
                     <h1 className='tracking-tight inline font-semibold text-[2.5rem] lg:text-6xl'>
                         Game
                     </h1>
-                    <h1 className='tracking-tight inline font-semibold text-[2.1rem] lg:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-[#FF1CF7] to-[#b249f8]'>
+                    <h1 className='tracking-tight inline font-semibold text-[2.1rem] lg:text-5xl bg-clip-text text-transparent bg-linear-to-b from-[#FF1CF7] to-[#b249f8]'>
                         Development
                     </h1>
                 </div>
