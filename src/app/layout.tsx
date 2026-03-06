@@ -17,14 +17,10 @@ export const metadata: Metadata = {
     generator: 'CelesteServer',
     keywords: ['KernelFreeze', 'KernelUwU', 'CelesteLove', 'Portfolio'],
     description: cn(
-        'Explore the digital realm of CelesteLove, a skilled developer with',
-        'a passion for crafting innovative and elegant solutions. Dive into a',
-        'showcase of her diverse portfolio, featuring web development projects',
-        'that blend creativity, functionality, and cutting-edge technology.',
-        "From responsive websites to dynamic applications, CelesteLove's portfolio",
-        'reflects a commitment to excellence and a love for pushing the boundaries',
-        'of digital possibilities. Discover the artistry in code and the transformative',
-        "power of technology at CelesteLove's portfolio website."
+        "Hey, I'm CelesteLove! I'm a developer who loves building cool things",
+        "for the web. Check out my portfolio to see what I've been working on —",
+        "from websites to apps, I enjoy blending creativity with code and trying",
+        "out new tech along the way."
     ),
 }
 
